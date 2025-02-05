@@ -40,7 +40,7 @@ const LoginForm = ({login}) => (
       <Input className='placeholder' placeholder="Enter your E-mail" style={{ width: '100%' , color:'black' }} />
     </Form.Item>
 
-    <Form.Item
+    <Form.Item  style={{color: '#333' }}
       label="Password"
       name="password"
       rules={[

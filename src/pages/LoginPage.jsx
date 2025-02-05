@@ -16,10 +16,12 @@ const LoginPage = () => {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
+      window.alert("Register your Account")
     });
   }
   return (
-    <div className="container">  <div className="box">
+    <div className="container ">  
+    <div className="box  ">
     <div> <br />
        <div>
         <h1 className='font-serif font-bold text-[10em -#0095ff] '>Login here</h1>
@@ -28,7 +30,7 @@ const LoginPage = () => {
        <p className='font-serif ' >Don't have an account? <Link to={'/register'}>Register here</Link></p>
       
     </div>
-    </div></div>
+    </div></div> 
   )
 }
 

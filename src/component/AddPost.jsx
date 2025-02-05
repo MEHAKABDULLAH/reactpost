@@ -31,6 +31,7 @@ const AddPost = () => {
                 const data = await response.json();
                 if (data.secure_url) {
                     imageURL = data.secure_url;
+                    window.alert("post sucessfully complete")
                 } else {
                     console.error("Image upload failed");
                     return;
@@ -40,7 +41,7 @@ const AddPost = () => {
                 return;
             }
         } else if (!pictureURL) {
-            console.error("No image URL or file provided");
+           window.alert("No image URL or file provided");
             return;
         }
 
@@ -64,7 +65,7 @@ const AddPost = () => {
     return (
         <section id="addPostSection">
             <form onSubmit={handleSubmit} className="form">
-                <input
+                <input style={{border:"black"}}
                     type="text"
                     value={caption}
                     onChange={(e) => setCaption(e.target.value)}

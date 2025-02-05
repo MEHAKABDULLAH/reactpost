@@ -9,10 +9,10 @@ import '../index.css';
 function PostReady() {
     const { posts } = useContext(PostContext);
     return (
-        <PostProvider>
+        <PostProvider><br /><br />
             <div className="App">
-                <header>
-                    <h1 ><em className='text-black'>Post Sharing App</em></h1>
+                <header> <br /><br />
+                    <h1 ><em className='text-white'>Post Sharing App</em></h1>
                 </header>
                 <AddPost />
                 <PostsList />
