@@ -27,7 +27,7 @@ const LoginForm = ({login}) => (
     onFinishFailed={onFinishFailed}
     autoComplete="off"
   >
-    <Form.Item style={{color: '#333' }}
+    <Form.Item 
       label="Email"
       name="email"
       rules={[
@@ -37,7 +37,7 @@ const LoginForm = ({login}) => (
         },
       ]}
     >
-      <Input className='placeholder' placeholder="Enter your E-mail" style={{ width: '100%' , color:'black' }} />
+      <Input className='placeholder'  placeholder="Enter your E-mail" style={{ width: '100%', }} />
     </Form.Item>
 
     <Form.Item  style={{color: '#333' }}
@@ -50,7 +50,7 @@ const LoginForm = ({login}) => (
         },
       ]}
     >
-      <Input.Password className='placeholder' placeholder="Enter your Password" style={{ width: '100%', height: '50px',color:'black' }} />
+      <Input.Password className='placeholder'  placeholder="Enter your Password" style={{ width: '100%', height: '50px',color:'black' }} />
     </Form.Item>
 
     <Form.Item name="remember" valuePropName="checked" label={null}>
@@ -58,7 +58,7 @@ const LoginForm = ({login}) => (
     </Form.Item>
 
     <Form.Item label={null}>
-      <Button  htmlType="submit " className='blue'> 
+      <Button type='primary'  htmlType="submit"  > 
         Login
       </Button>
     </Form.Item>

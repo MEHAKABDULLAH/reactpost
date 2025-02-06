@@ -35,7 +35,7 @@ const onFinishFailed = (errorInfo) => {
           },
         ]}
       >
-        <Input className='placeholder'  placeholder="Enter your username" style={{ width: '100%', height: '40px' }}  />
+        <Input className='placeholder'   placeholder="Enter your username" style={{ width: '100%', height: '40px' }}  />
       </Form.Item>
       <Form.Item
         label="Email"
@@ -48,7 +48,7 @@ const onFinishFailed = (errorInfo) => {
          
         ]}
       >
-        <Input className='placeholder'  placeholder="Enter your E-mail" style={{ width: '100%', height: '40px' }}  />
+        <Input className='placeholder'   placeholder="Enter your E-mail" style={{ width: '100%', height: '40px' }}  />
       </Form.Item>
   
       <Form.Item
@@ -62,13 +62,13 @@ const onFinishFailed = (errorInfo) => {
          
         ]}
       >
-        <Input.Password className='placeholder' placeholder="Enter your Password" style={{ width: '100%', height: '40px' }} />
+        <Input.Password className='placeholder'  placeholder="Enter your Password" style={{ width: '100%', height: '40px' }} />
       </Form.Item>
   
       
   
       <Form.Item label={null}>
-        <Button className='blue' htmlType="submit">
+        <Button  type='primary'  htmlType="submit">
          Register
         </Button>
       </Form.Item>
