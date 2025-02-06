@@ -16,7 +16,7 @@ const RegisterPage = () => {
       .then((userCredential) => {
         const user = userCredential.user;
        window.alert("yor account has been registered sucessfully")
-       useNavigate('/')
+       navigate('/')
       })
       .catch((error) => {
         const errorMessage = error.message;
