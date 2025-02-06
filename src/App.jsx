@@ -11,7 +11,9 @@ function App() {
   
    return (
 <PostProvider>
-            <AppRouter />
+<Router basename="/reactpost/">  {/* Set the basename for React Router */}
+        <AppRouter />  {/* Your routes will now use the /reactpost/ base path */}
+      </Router>
         </PostProvider>
   
   )
